@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Regist"
+        android:paddingTop="75dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/usernameRegis"
+        android:paddingLeft="14dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Username"
+        android:paddingTop="20dp"/>
+
+    <EditText
+        android:id="@+id/nameRegis"
+        android:paddingLeft="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Name"
+        android:paddingTop="20dp"/>
+
+    <EditText
+        android:id="@+id/passwordRegis"
+        android:paddingLeft="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Password"
+        android:paddingTop="20dp"
+        android:paddingBottom="13dp"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/btnRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_gravity="center"
+        ></Button>
+
+    <TextView
+        android:id="@+id/tvToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already Have an Account"
+        android:gravity="center"
+        android:textSize="15dp"></TextView>
+
+
+</LinearLayout>
