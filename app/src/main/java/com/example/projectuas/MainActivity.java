@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import org.jetbrains.annotations.NonNls;
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     TextView etUsername, etName;
     SessionManager sessionManager;
     String username, name;
+    Button btnKategori;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
 
         etUsername = findViewById(R.id.mainName);
         etName = findViewById(R.id.mainUser);
+        btnKategori = findViewById(R.id.btnKategori);
+        btnKategori.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CategoryActivity.class);
+                startActivity(intent);
+            }
+        });
 
         username = sessionManager.getUserDetail().get(SessionManager.USERNAME);
         name = sessionManager.getUserDetail().get(SessionManager.NAME);

@@ -1,11 +1,13 @@
 package com.example.projectuas.Api;
 
+import com.example.projectuas.Model.category.Category;
 import com.example.projectuas.Model.login.Login;
 import com.example.projectuas.Model.register.Register;
 
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface ApiInterface {
@@ -23,6 +25,11 @@ public interface ApiInterface {
             @Field("username") String username,
             @Field("password") String password,
             @Field("name") String name
+    );
+
+    @GET("category.php")
+    Call<Category> CategoryResponse(
+
     );
 
 }
