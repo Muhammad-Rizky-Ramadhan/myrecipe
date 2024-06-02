@@ -46,4 +46,5 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:2.6.1")
     implementation("com.squareup.retrofit2:converter-gson:2.6.1")
     implementation("org.glassfish:javax.annotation:10.0-b28")
+
 }

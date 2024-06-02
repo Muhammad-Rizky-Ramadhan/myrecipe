@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,15 +9,33 @@
     app:cardUseCompatPadding="true"
     android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tvName"
-            android:padding="10dp"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="nama kategori"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:gravity="center"
-            />
+            android:orientation="vertical"
+            android:background="@color/blue"
+            >
+
+            <ImageView
+                android:id="@+id/imgListCatalog"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bglogin"
+                android:layout_margin="5dp"
+                android:paddingTop="10dp"></ImageView>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:fontFamily="@font/poppins"
+                android:text="Placeholder"
+                android:layout_gravity="center"
+                android:textSize="14dp"></TextView>
+
+        </LinearLayout>
+
 
 </androidx.cardview.widget.CardView>
